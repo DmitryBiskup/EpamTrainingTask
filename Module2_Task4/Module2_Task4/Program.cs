@@ -13,7 +13,7 @@ namespace Module2_Task4
 
             var line = Console.ReadLine();
             int choice;
-            if (int.TryParse(line, out choice) == false)
+            if (!int.TryParse(line, out choice))
             {
                 Console.Clear();
                 Console.WriteLine("Wrong data input, try again input only digits");
@@ -43,7 +43,7 @@ namespace Module2_Task4
 
             var select = Console.ReadLine();
             int choice1;
-            if (int.TryParse(select, out choice1) == false)
+            if (!int.TryParse(select, out choice1))
             {
                 Console.WriteLine("Wrong, data input, try again input only digits");
             }
